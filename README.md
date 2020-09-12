@@ -30,13 +30,31 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+  - Stateful class components can be built using the componentDidMount, componentDidUpdate. componentDidMount is the class component equivalent to the useState hook used in functional components. When the component successfully renders for the first time, the function can be set to execute 'this.setState(...)' which sets the inital state of the component. ComponentDidUpdate is the class component equivalent to the useEffect hook from functional components. The componentDidUpdate takes two arguments (prevProps, prevState) and, depending on the logic within the definition, will check for changes in the state. This is the functional equivalent to using a dependency array in functional components. 
+
 2. Describe the different phases of the component lifecycle.
+
+  - There are 3 phases to the react component lifecycle. They include: 
+
+    1. Mounting: When the component initially renders (elements are put into the DOM) 
+    2. Updating: When changes are made to the state or props of the DOM
+    3. Unmounting: When the component is removed from the DOM
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+  -See 1
+
 4. Define stateful logic.
 
+  - Stateful logic is a type of logic within React that operates from changes or updates to certain parts of the DOM. When a change is made to the DOM that is defined by the lifecycle methods, the state logic is triggered and changes are rendered depending on the hook or method logic.
+
 5. Describe how to test a React component with React Testing Library.
+
+  - React testing library is used to test whether parts or the app as a whole are functioning as intended. When writing tests the 'test' or 'describe' should include:
+
+    -Arrange: declare mockVariables, pulling them from the DOM if necessary
+    -Act: tell the test what to do with the mockVariables
+    -Assert: tell the test what you expect the results of the Act to be. If the are as expected, the test passes. If not, the test fails
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
